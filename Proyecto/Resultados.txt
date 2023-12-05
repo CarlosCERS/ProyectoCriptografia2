@@ -1,0 +1,89 @@
+Encriptacion y desencriptacion: Proyecto/Vectores/Texto.txt, 1000 ciclos
+Chacha20 
+	 Encriptacion:0.008950948715209961 
+	 Desencriptacion:0.006012439727783203
+AES_ECB 
+	 Encriptacion:0.01195669174194336 
+	 Desencriptacion:0.010112285614013672
+AES_GCM 
+	 Encriptacion:0.05090594291687012 
+	 Desencriptacion:0.06513857841491699
+
+Encriptacion y desencriptacion: Proyecto/Vectores/Requerimiento.pdf, 1000 ciclos
+Chacha20 
+	 Encriptacion:0.9694077968597412 
+	 Desencriptacion:0.9794142246246338
+AES_ECB 
+	 Encriptacion:0.1361382007598877 
+	 Desencriptacion:0.13083505630493164
+AES_GCM 
+	 Encriptacion:0.35088205337524414 
+	 Desencriptacion:0.33450889587402344
+
+Encriptacion y desencriptacion: Proyecto/Vectores/Imagen.jpeg, 1000 ciclos
+Chacha20 
+	 Encriptacion:0.2821362018585205 
+	 Desencriptacion:0.22455644607543945
+AES_ECB 
+	 Encriptacion:0.041443586349487305 
+	 Desencriptacion:0.042554616928100586
+AES_GCM 
+	 Encriptacion:0.12778711318969727 
+	 Desencriptacion:0.13735699653625488
+
+Encriptacion y desencriptacion: Proyecto/Vectores/Texto.txt, 1000 ciclos, con RSA_OAEP
+RSA_OAEP 
+	 Encriptacion:0.6344966888427734 
+	 Desencriptacion:3.8210949897766113
+
+Hashing: 1000 ciclos
+SHA-2 
+	 Tiempo:0.00014586257934570313 archivo .txt
+	 Tiempo:0.0010352022647857667 archivo .pdf
+	 Tiempo:0.00032754755020141603 archivo .jpeg
+SHA-3 
+	 Tiempo:0.00016194939613342285 archivo .txt
+	 Tiempo:0.0031005260944366457 archivo .pdf
+	 Tiempo:0.0009161057472229004 archivo .jpeg
+
+Firma y verificación: Proyecto/Vectores/Texto.txt, 1000 ciclos
+RSA-PSS 
+	 Firma:3.7662856578826904 
+	 Verificacion:0.6158111095428467
+ECDSA-P521 
+	 Firma:0.9974069595336914 
+	 Verificacion:3.3128468990325928
+ED25519 
+	 Firma:0.11100482940673828 
+	 Verificacion:0.04621386528015137
+
+Firma y verificación: Proyecto/Vectores/Requerimiento.pdf, 1000 ciclos
+RSA-PSS 
+	 Firma:5.517295837402344 
+	 Verificacion:2.339200019836426
+ECDSA-P521 
+	 Firma:2.0540151596069336 
+	 Verificacion:4.354862689971924
+ED25519 
+	 Firma:0.6534013748168945 
+	 Verificacion:1.1337394714355469
+
+Firma y verificación: Proyecto/Vectores/Imagen.jpeg, 1000 ciclos
+RSA-PSS 
+	 Firma:4.069422006607056 
+	 Verificacion:1.0133728981018066
+ECDSA-P521 
+	 Firma:1.235708236694336 
+	 Verificacion:3.4688773155212402
+ED25519 
+	 Firma:0.2464609146118164 
+	 Verificacion:0.3056361675262451
+
+Hashing contrasena: Hola mundo
+SHA-2 
+	 Tiempo:1.9948482513427736e-06
+SHA-3 
+	 Tiempo:2.324676513671875e-05
+Scrypt 
+	 Tiempo:3.8146495819091795e-05
+
