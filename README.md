@@ -19,6 +19,9 @@ Este proyecto tomará un archivo .txt pequeño para probar los algoritmos, la ra
 ## Requerimientos
 <ul>
   <li>Python 3.9 o superior</li>
+  <li>CMake</li>
+  <li>liboqs</li>
+  <li>Algún compilador de C como GCC</li>
 </ul>
 
 ## Uso
@@ -33,6 +36,18 @@ En la carpeta de <b>Proyecto</b> se encuentran los archivos más importantes:
     Claves.json: Este es el archivo más importantes para el usuario, ya que dentro de este sencillo archivo podrá modificar alguno valores como la clave que se usarán en distintos algorítmos o el número de ciclos que desee ejecutar en todos los algorítmos, todo esto sin necesidad de modificar directamente el código fuente y que todo esto sea uniforme para todo el proyecto.
   </li>
 </ul>
+
+## Instalación
+### Instalar CMake
+Como primer paso de esto, para el proyecto necestiará de una herramienta multiplataforma de generación o automatización de código, en este caso vamos a hacer uso de <b>CMake</b>, para lo cual entrará en su página oficial <a>https://cmake.org/</a> y descargará la versión que va de acuerdo a su sistema operativo, ya sea el instalable o el .zip.
+#### Si usa Windows
+Despues de instalar o extraer sus carpetas de CMake en su computadora, queda pendiente el generar un PATH para que su sistema operativo pueda hacer uso de este, por lo que deberá ingresar a la carpeta de CMake hasta la carpeta "bin" y copiará la ruta de esta. <b>En la mayoría de las ocasiones, la ruta será:<i>C:\Program Files\CMake\bin</i></b>
+Una vez copiada esta ruta, deberá ingresar a <b>Editar las variables de entorno del sistema</b> o <b>Edit the system enviroment variables</b>, dependiendo del idioma de su sistema operativo.
+Una vez dentro, irá a la pestaña "Opciones avanzadas" y dará click en el botón <b>Variables de entorno...</b> para editar las variables.
+Dentro de la nueva ventana abierta, en la mitad inferior llamada "Variables del sistema", donde seleccionará la variable llamada "Path" y dará click en <b>Editar...</b> para abrir un nuevo menú.
+Ya dentro del menú, agregará la ruta a la carpeta bin que había copiado anteriormente hasta abajo, <b>Sin modificar alguna de las rutas que ya se encontraban antes</b>. Una vez colocado de en "Aceptar" en todo para guardar cambios.
+#### Verificación
+Para verificar que tenga correctamente instalado CMake, en una terminal escriba el siguiente comando <code>cmake</code>.
 
 ### Si usa Windows
 Para ejecutar el proyecto, dentro de la carpeta principal del repositorio (dónde solo se puedan observar las carpetas Proyecto y Pruebas, en terminal ejecute el siguiente código:
