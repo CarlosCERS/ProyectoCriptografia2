@@ -83,15 +83,38 @@ cmake -S liboqs -B liboqs/build -DBUILD_SHARED_LIBS=ON
 cmake --build liboqs/build --parallel 8
 cmake --build liboqs/build --target install
 ```
-  </li>
-  <li>
-    
-  </li>
-</ul>
-
 #### Nota
 En el tercer comando <i>--parallel 8</i>, el numero deberá ser de acuerdo al número de núcleos que su procesador tenga.
+  </li>
+  <li>
+    Ahora con esta primera instalació hecha, con la misma terminal ingrese a la carpeta <b>build</b>. En caso de no existir cree y entre a la carpeta con el comando:
 
+```shell
+mkdir build
+cd build
+```
+  </li>
+  <li>
+    Dentro de la carpeta, ejecute el siguiente comando:
+    
+```shell
+cmake -G "Visual Studio 16 2019" ..
+```
+  </li>
+  <li>
+    Ahí mismo se va a crear un archivo tipo solución Visual Studio llamado <b>liboqs.sln</b>, el cual va a abrir con Visual Studio 2019 o 2022.
+  </li>
+  <li>
+    Con el Visual Studio <b>en modo release</b>, va a compilar toda la solución.
+  </li>
+  <li>
+    Por último, con su terminal dentro de la misma carpeta de <b>build</b>, ejecute el siguiente comando:
+
+```shell
+cmake --build . --config Release --target install
+```
+  </li>
+</ul>
 <ul>
   <li>
     Despues de instalar liboqs en su computadora, queda pendiente el generar un PATH para que su sistema operativo pueda hacer uso de este, por lo que deberá ingresar a la carpeta de liboqs hasta la carpeta "bin" y copiará la ruta de esta. <b>En la mayoría de las ocasiones, la ruta será:<i>C:\Program Files (x86)\liboqs\bin</i></b>
