@@ -1,8 +1,12 @@
 import os
+import oqs
 
 ################# Cifrado y Descifrado ######################
 Vector = "Proyecto/Vectores/Texto.txt"
 print(f"Procesando encriptaciónes post-cuánticos")
+print("Versión del liboqs:", oqs.oqs_version())
+print("Versión del liboqs-python:", oqs.oqs_python_version())
+print("\n\n")
 
 # ML-KEM Scheme
 print('Ejecutando ML-KEM Scheme')
