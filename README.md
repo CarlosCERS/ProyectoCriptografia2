@@ -85,9 +85,9 @@ Una vez terminado todo, ya solo quedará ingresar a la carpeta principal del pro
 pip install .
 ```
   </li>
-  <li>
-    
-  ### Ejecución
+</ol>
+
+ ## Ejecución
   <ul>
     <li>
       
@@ -110,8 +110,3 @@ python3 Proyecto/EjecutarProyecto.py
 ```
   </li>
   </ul>
-  </li>
-</ol>
-
-
-
