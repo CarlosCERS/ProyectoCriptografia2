@@ -45,6 +45,8 @@ En la carpeta de <b>Proyecto</b> se encuentran los archivos más importantes:
 ### Instalar CMake
 Como primer paso de esto, para el proyecto necestiará de una herramienta multiplataforma de generación o automatización de código, en este caso vamos a hacer uso de <b>CMake</b>, para lo cual entrará en su página oficial <a>https://cmake.org/</a> y descargará la versión que va de acuerdo a su sistema operativo, ya sea el instalable o el .zip.
 
+![CMake!](https://github.com/CarlosCERS/ProyectoCriptografia2/assets/101842946/c7a4510a-96fd-4867-bc7a-7c0fb54e48fa
+
 #### Si usa Windows
 <ul>
   <li>
