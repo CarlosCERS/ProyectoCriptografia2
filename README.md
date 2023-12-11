@@ -22,6 +22,7 @@ Este proyecto tomará un archivo .txt pequeño para probar los algoritmos, la ra
   <li>CMake</li>
   <li>liboqs</li>
   <li>Algún compilador de C como GCC</li>
+  <li>Visual Studio 2019 o 2022</li>
 </ul>
 
 ## Uso
