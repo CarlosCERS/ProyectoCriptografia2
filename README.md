@@ -39,6 +39,9 @@ En la carpeta de <b>Proyecto</b> se encuentran los archivos más importantes:
 </ul>
 
 ## Instalación
+<ol>
+  <li>
+
 ### Instalar CMake
 Como primer paso de esto, para el proyecto necestiará de una herramienta multiplataforma de generación o automatización de código, en este caso vamos a hacer uso de <b>CMake</b>, para lo cual entrará en su página oficial <a>https://cmake.org/</a> y descargará la versión que va de acuerdo a su sistema operativo, ya sea el instalable o el .zip.
 
@@ -54,9 +57,10 @@ Para verificar que tenga correctamente instalado CMake, en una terminal escriba 
 ```shell
 cmake
 ```
-
+  </li>
+  <li>
+    
 ## Instalar liboqs
-
 Para instalar la librería liboqs, deberá abrir una terminal en su sistema operativo en cualquier parte que le sea comodo guardar archivos, como el escritorio o una carpeta destinada. <b>En caso de hacer uso de Windows, deberá abrir la terminal como administrador, de caso contrario no podrá instalar al 100% la librería</b>. Dentro de la terminal, deberá ingresar las siguientes líneas de comandos.
 ```shell
 git clone --depth=1 https://github.com/open-quantum-safe/liboqs
@@ -72,33 +76,42 @@ Una vez copiada esta ruta, deberá ingresar a <b>Editar las variables de entorno
 Una vez dentro, irá a la pestaña "Opciones avanzadas" y dará click en el botón <b>Variables de entorno...</b> para editar las variables.
 Dentro de la nueva ventana abierta, en la mitad inferior llamada "Variables del sistema", donde seleccionará la variable llamada "Path" y dará click en <b>Editar...</b> para abrir un nuevo menú.
 Ya dentro del menú, agregará la ruta a la carpeta bin que había copiado anteriormente hasta abajo, <b>Sin modificar alguna de las rutas que ya se encontraban antes</b>. Una vez colocado de en "Aceptar" en todo para guardar cambios.
-
+  </li>
+  <li>
+    
 ### Ingresar ops al proyecto
-Una vez terminado todo, ya solo quedará ingresar a la carpeta "Proyecto" del proyecto e ingresar en terminal el siguiente comando:
+Una vez terminado todo, ya solo quedará ingresar a la carpeta principal del proyecto e ingresar en terminal el siguiente comando:
 ```shell
 pip install .
 ```
-
-#### Nota para borrar.
-Para comprobar que si funcionó, ingresen cualquiera de los siguientes comandos:
-```shell
-py .\Proyecto\Algoritmos\kem.py
-py .\Proyecto\Algoritmos\sig.py
-py .\Proyecto\Algoritmos\rand.py
-```
-
+  </li>
+  <li>
+    
+  ### Ejecución
+  <ul>
+    <li>
+      
 ### Si usa Windows
 Para ejecutar el proyecto, dentro de la carpeta principal del repositorio (dónde solo se puedan observar las carpetas Proyecto y Pruebas, en terminal ejecute el siguiente código:
-</br>
-<code>py Proyecto/main.py </code>
-</br>
-Con todo esto poco a poco van a ir apareciendo las gráficas comparando distintos tiempos de ejecución de distintos algoritmos de encriptación, los cuales tendrá que cerrar para poder avanzar a la siguiente parte del proyecto. Una vez terminado de ejecutar todos los algoritmos y visto todas las gráficas, toda la información recolectada se guardarán en <i>Texto.txt</i> para que usted a detalle pueda analizarlo después.
-
+```shell
+py Proyecto/main.py
+```
+Con todo esto el programa comenzará a ejecutar cada uno de los algoritmos, imprimiendo sus resultados y confirmando su exitosa ejecución.
+    </li>
+    <li>
 ### Si usa Linux
 Debido a que algunas cosas no se podrán hacer de manera automática, se tendrán que hacer de manera manual, por lo que primero se tenrá que instalar las librerias manualmente ejecutando desde dentro de la carpeta principal del repositorio (dónde solo se puedan observar las carpetas Proyecto y Pruebas, en terminal ejecute el siguiente código:
-</br>
-<code>pip install -r Proyecto/requirements.txt</code>
-</br>
+```shell
+pip install -r Proyecto/requirements.txt
+```
 Una vez terminado de instalar las liberrias necesarias, desde la misma localización, ejecutar el siguiente código para iniciar el programa:
-</br>
-<code>python3 Proyecto/EjecutarProyecto.py</code>
+```shell
+python3 Proyecto/EjecutarProyecto.py
+```
+  </li>
+  </ul>
+  </li>
+</ol>
+
+
+
