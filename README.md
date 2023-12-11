@@ -75,13 +75,17 @@ cmake
 ## Instalar liboqs
 <ul>
   <li>
-    Para instalar la librería liboqs, deberá abrir una terminal en su sistema operativo en cualquier parte que le sea comodo guardar archivos, como el escritorio o una carpeta destinada. <b>En caso de hacer uso de Windows, deberá abrir la terminal como administrador, de caso contrario no podrá instalar al 100% la librería</b>. Dentro de la terminal, deberá ingresar las siguientes líneas de comandos.
+    Para instalar la librería liboqs, deberá abrir una terminal en su sistema operativo en cualquier parte que le sea comodo guardar archivos, como el escritorio o una carpeta destinada. <b>En caso de hacer uso de Windows, deberá abrir la terminal como administrador, de caso contrario no podrá instalar la librería por cuestión de protección de archivos x86</b>. Dentro de la terminal, deberá ingresar las siguientes líneas de comandos.
+    
 ```shell
 git clone --depth=1 https://github.com/open-quantum-safe/liboqs
 cmake -S liboqs -B liboqs/build -DBUILD_SHARED_LIBS=ON
 cmake --build liboqs/build --parallel 8
 cmake --build liboqs/build --target install
 ```
+  </li>
+  <li>
+    
   </li>
 </ul>
 
@@ -139,3 +143,7 @@ python3 Proyecto/EjecutarProyecto.py
 ```
   </li>
   </ul>
+  
+## Creditos especiales
+Este proyecto usa código e instrucciones del repositorio público <b>liboqs-python</b>, de <b>vsoftco</b>, todo reconocimiento a sus respectivos autores.
+Fuente: <a>https://github.com/open-quantum-safe/liboqs-python</a>
