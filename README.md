@@ -131,8 +131,12 @@ cmake --build . --config Release --target install
   <li>
     Ya dentro del menú, agregará la ruta a la carpeta bin que había copiado anteriormente hasta abajo, <b>Sin modificar alguna de las rutas que ya se encontraban antes</b>. Una vez colocado de en "Aceptar" en todo para guardar cambios.
   </li>
+  <li>
+    Por último, se recomienda que despues de esto reinicie su equipo, a veces se pueden preentar problemas que no se resuelven hasta reiniciar el equipo.
+  </li>
 </ul>
   </li>
+  
   <li>
     
 ### Ingresar ops al proyecto
