@@ -46,11 +46,23 @@ En la carpeta de <b>Proyecto</b> se encuentran los archivos más importantes:
 Como primer paso de esto, para el proyecto necestiará de una herramienta multiplataforma de generación o automatización de código, en este caso vamos a hacer uso de <b>CMake</b>, para lo cual entrará en su página oficial <a>https://cmake.org/</a> y descargará la versión que va de acuerdo a su sistema operativo, ya sea el instalable o el .zip.
 
 #### Si usa Windows
-Despues de instalar o extraer sus carpetas de CMake en su computadora, queda pendiente el generar un PATH para que su sistema operativo pueda hacer uso de este, por lo que deberá ingresar a la carpeta de CMake hasta la carpeta "bin" y copiará la ruta de esta. <b>En la mayoría de las ocasiones, la ruta será:<i>C:\Program Files\CMake\bin</i></b>
-Una vez copiada esta ruta, deberá ingresar a <b>Editar las variables de entorno del sistema</b> o <b>Edit the system enviroment variables</b>, dependiendo del idioma de su sistema operativo.
-Una vez dentro, irá a la pestaña "Opciones avanzadas" y dará click en el botón <b>Variables de entorno...</b> para editar las variables.
-Dentro de la nueva ventana abierta, en la mitad inferior llamada "Variables del sistema", donde seleccionará la variable llamada "Path" y dará click en <b>Editar...</b> para abrir un nuevo menú.
-Ya dentro del menú, agregará la ruta a la carpeta bin que había copiado anteriormente hasta abajo, <b>Sin modificar alguna de las rutas que ya se encontraban antes</b>. Una vez colocado de en "Aceptar" en todo para guardar cambios.
+<ul>
+  <li>
+    Despues de instalar o extraer sus carpetas de CMake en su computadora, queda pendiente el generar un PATH para que su sistema operativo pueda hacer uso de este, por lo que deberá ingresar a la carpeta de CMake hasta la carpeta "bin" y copiará la ruta de esta. <b>En la mayoría de las ocasiones, la ruta será:<i>C:\Program Files\CMake\bin</i></b>
+  </li>
+  <li>
+    Una vez copiada esta ruta, deberá ingresar a <b>Editar las variables de entorno del sistema</b> o <b>Edit the system enviroment variables</b>, dependiendo del idioma de su sistema operativo.
+  </li>
+  <li>
+    Una vez dentro, irá a la pestaña "Opciones avanzadas" y dará click en el botón <b>Variables de entorno...</b> para editar las variables.
+  </li>
+  <li>
+    Dentro de la nueva ventana abierta, en la mitad inferior llamada "Variables del sistema", donde seleccionará la variable llamada "Path" y dará click en <b>Editar...</b> para abrir un nuevo menú.
+  </li>
+  <li>
+    Ya dentro del menú, agregará la ruta a la carpeta bin que había copiado anteriormente hasta abajo, <b>Sin modificar alguna de las rutas que ya se encontraban antes</b>. Una vez colocado de en "Aceptar" en todo para guardar cambios.
+  </li>
+</ul>
 
 #### Verificación
 Para verificar que tenga correctamente instalado CMake, en una terminal escriba el siguiente comando.
@@ -61,21 +73,38 @@ cmake
   <li>
     
 ## Instalar liboqs
-Para instalar la librería liboqs, deberá abrir una terminal en su sistema operativo en cualquier parte que le sea comodo guardar archivos, como el escritorio o una carpeta destinada. <b>En caso de hacer uso de Windows, deberá abrir la terminal como administrador, de caso contrario no podrá instalar al 100% la librería</b>. Dentro de la terminal, deberá ingresar las siguientes líneas de comandos.
+<ul>
+  <li>
+    Para instalar la librería liboqs, deberá abrir una terminal en su sistema operativo en cualquier parte que le sea comodo guardar archivos, como el escritorio o una carpeta destinada. <b>En caso de hacer uso de Windows, deberá abrir la terminal como administrador, de caso contrario no podrá instalar al 100% la librería</b>. Dentro de la terminal, deberá ingresar las siguientes líneas de comandos.
 ```shell
 git clone --depth=1 https://github.com/open-quantum-safe/liboqs
 cmake -S liboqs -B liboqs/build -DBUILD_SHARED_LIBS=ON
 cmake --build liboqs/build --parallel 8
 cmake --build liboqs/build --target install
 ```
+  </li>
+</ul>
+
 #### Nota
 En el tercer comando <i>--parallel 8</i>, el numero deberá ser de acuerdo al número de núcleos que su procesador tenga.
 
-Despues de instalar liboqs en su computadora, queda pendiente el generar un PATH para que su sistema operativo pueda hacer uso de este, por lo que deberá ingresar a la carpeta de liboqs hasta la carpeta "bin" y copiará la ruta de esta. <b>En la mayoría de las ocasiones, la ruta será:<i>C:\Program Files (x86)\liboqs\bin</i></b>
-Una vez copiada esta ruta, deberá ingresar a <b>Editar las variables de entorno del sistema</b> o <b>Edit the system enviroment variables</b>, dependiendo del idioma de su sistema operativo.
-Una vez dentro, irá a la pestaña "Opciones avanzadas" y dará click en el botón <b>Variables de entorno...</b> para editar las variables.
-Dentro de la nueva ventana abierta, en la mitad inferior llamada "Variables del sistema", donde seleccionará la variable llamada "Path" y dará click en <b>Editar...</b> para abrir un nuevo menú.
-Ya dentro del menú, agregará la ruta a la carpeta bin que había copiado anteriormente hasta abajo, <b>Sin modificar alguna de las rutas que ya se encontraban antes</b>. Una vez colocado de en "Aceptar" en todo para guardar cambios.
+<ul>
+  <li>
+    Despues de instalar liboqs en su computadora, queda pendiente el generar un PATH para que su sistema operativo pueda hacer uso de este, por lo que deberá ingresar a la carpeta de liboqs hasta la carpeta "bin" y copiará la ruta de esta. <b>En la mayoría de las ocasiones, la ruta será:<i>C:\Program Files (x86)\liboqs\bin</i></b>
+  </li>
+  <li>
+    Una vez copiada esta ruta, deberá ingresar a <b>Editar las variables de entorno del sistema</b> o <b>Edit the system enviroment variables</b>, dependiendo del idioma de su sistema operativo.
+  </li>
+  <li>
+    Una vez dentro, irá a la pestaña "Opciones avanzadas" y dará click en el botón <b>Variables de entorno...</b> para editar las variables.
+  </li>
+  <li>
+    Dentro de la nueva ventana abierta, en la mitad inferior llamada "Variables del sistema", donde seleccionará la variable llamada "Path" y dará click en <b>Editar...</b> para abrir un nuevo menú.
+  </li>
+  <li>
+    Ya dentro del menú, agregará la ruta a la carpeta bin que había copiado anteriormente hasta abajo, <b>Sin modificar alguna de las rutas que ya se encontraban antes</b>. Una vez colocado de en "Aceptar" en todo para guardar cambios.
+  </li>
+</ul>
   </li>
   <li>
     
