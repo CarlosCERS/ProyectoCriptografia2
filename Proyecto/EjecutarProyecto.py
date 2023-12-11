@@ -16,11 +16,12 @@ print('Ejecución terminada exitosamente\n\n')
 # ML-DSA Signature Scheme
 print('Ejecutando ML-DSA Signature Scheme')
 os.system('py Proyecto/Algoritmos/rand.py')
+os.system('py Proyecto/Algoritmos/sig.py')
 print('Ejecución terminada exitosamente\n\n')
 
 # SLH-DSA Signature Scheme
 print('Ejecutando SLH-DSA Signature Scheme')
-os.system('py Proyecto/Algoritmos/sig.py')
+os.system('py Proyecto/Algoritmos/sig2.py')
 print('Ejecución terminada exitosamente\n\n')
 
 print('Fin del programa.')

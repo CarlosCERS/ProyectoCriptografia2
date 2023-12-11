@@ -8,7 +8,7 @@ pprint(sigs, compact=True)
 message = "This is the message to sign".encode()
 
 # Se crea un firmante y un verificador.
-sigalg = "Dilithium3"
+sigalg = "SPHINCS+-SHA2-256s-simple"
 with oqs.Signature(sigalg) as firmante:
     with oqs.Signature(sigalg) as verificador:
         print("\nSignature details:")
